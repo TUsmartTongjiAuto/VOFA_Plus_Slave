@@ -95,7 +95,7 @@ typedef enum{
 
 extern unsigned char init_failed_flag;                             // ³õÊ¼»¯Ê§°Ü±êÖ¾Î»
 extern float vofa_rev_data[VOFA_RECV_CH_NUM];                      // ¼ÇÂ¼½ÓÊÕÊı¾İ
-extern unsigned char vofa_rev_new_data_flag[VOFA_RECV_CH_NUM];     // ½ÓÊÕĞÂÊı¾İ±êÖ¾Î»,ĞèÊÖ¶¯ÖÃÁã
+extern unsigned char vofa_rev_new_data_flag[VOFA_RECV_CH_NUM];     // ½ÓÊÕĞÂÊı¾İ±êÖ¾Î» ĞèÊÖ¶¯ÖÃÁã
 extern float vofa_last_rev_data;                                   // ×îºóÒ»´Î½ÓÊÕÊı¾İ
 extern unsigned int vofa_last_rev_ch;                              // ×îºóÒ»´Î½ÓÊÕÍ¨µÀ
 
@@ -105,7 +105,7 @@ unsigned char VOFA_Client_Init(void);                               // VOFA¿Í»§¶
 void VOFA_Set_Float_Data(unsigned int index, float data);           // ÉèÖÃÄ³Í¨µÀÊı¾İ
 void VOFA_Set_Float_Datas_From_Start(unsigned int set_nums,...);    // ÉèÖÃ´ÓµÚÒ»¸öÍ¨µÀ¿ªÊ¼µÄ¶à¸öÍ¨µÀÊı¾İ
 void VOFA_Send_Datas(unsigned int send_nums);                       // ´ÓµÚÒ»¸öÍ¨µÀ¿ªÊ¼·¢ËÍÊı¾İÖ¸¶¨ÊıÁ¿µÄÊı¾İ
-void VOFA_Send_JustFloat_Image(unsigned int IMG_ID, unsigned int IMG_WIDTH, unsigned int IMG_HEIGHT, unsigned int IMG_DATA_SIZE, ImgFormat_t IMG_FORMAT,unsigned char *IMG_DATA); // ·¢ËÍÍ¼ÏñÊı¾İ
+void VOFA_Send_JustFloat_Image(unsigned int IMG_ID, int IMG_WIDTH, int IMG_HEIGHT, unsigned int IMG_DATA_SIZE, ImgFormat_t IMG_FORMAT,unsigned char *IMG_DATA); // ·¢ËÍÍ¼ÏñÊı¾İ
 void VOFA_Receiver_Callback(void);                                  // ½ÓÊÕ»Øµ÷º¯Êı ĞèÒªÔÚÖ÷Ñ­»·»òÕß½ÓÊÕÖĞ¶ÏÖĞµ÷ÓÃ
 
 

@@ -288,7 +288,7 @@ void VOFA_Send_Datas(unsigned int send_nums)
 }
 
 
-void VOFA_Send_JustFloat_Image(unsigned int IMG_ID, unsigned int IMG_WIDTH, unsigned int IMG_HEIGHT,unsigned int IMG_DATA_SIZE, ImgFormat_t IMG_FORMAT,unsigned char* IMG_DATA)
+void VOFA_Send_JustFloat_Image(unsigned int IMG_ID, int IMG_WIDTH, int IMG_HEIGHT,unsigned int IMG_DATA_SIZE, ImgFormat_t IMG_FORMAT,unsigned char* IMG_DATA)
 {
     int preFrame[7] = {
         IMG_ID, 
